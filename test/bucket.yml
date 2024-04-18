@@ -1,5 +1,5 @@
 flows:
-  8effdb37-3e63-466e-bbf3-113747470be4: {ver: 2, file: test.snapshot, comments: test1,
-    author: anonymous, created: 1713463059034, flowName: test, flowDesc: ''}
+  8effdb37-3e63-466e-bbf3-113747470be4: {ver: 3, file: test.snapshot, comments: test2,
+    author: anonymous, created: 1713463891168, flowName: test, flowDesc: ''}
 layoutVer: 1
 bucketId: cb02471b-8d71-442b-82c9-d20cdf612cd6
