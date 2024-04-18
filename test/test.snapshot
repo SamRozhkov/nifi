@@ -19,12 +19,12 @@
         "name" : "test",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 843.0,
-          "y" : 158.0
+          "x" : 800.0,
+          "y" : 304.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "success" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
