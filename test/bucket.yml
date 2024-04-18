@@ -1,11 +1,11 @@
 flows:
   8effdb37-3e63-466e-bbf3-113747470be4:
-    ver: 8
+    ver: 9
     file: test.snapshot
     comments: |
-      niew version
+      еще одна версия
     author: anonymous
-    created: 1713466931526
+    created: 1713467202277
     flowName: test
     flowDesc: ''
 layoutVer: 1
