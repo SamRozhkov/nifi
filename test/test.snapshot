@@ -24,7 +24,7 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "success" ],
+          "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
