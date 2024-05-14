@@ -43,6 +43,96 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "92fdd94f-1446-38a2-909c-72660bea6769",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "808fce6e-940f-313c-8da3-4f4620c6f8e2",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "06630e7a-5a59-3e50-98f5-7c52389a8864",
+            "name" : "ConvertAvroToJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "06630e7a-5a59-3e50-98f5-7c52389a8864",
+            "name" : "ConvertAvroToJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "2760cb37-912d-384a-996b-eb7bdd398786",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "c76c9d21-c02f-3dea-abd8-163c09fc0637",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "7fe3c5ba-d5bb-33a4-85ad-0d19342dd506",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "d814ff50-e559-38ee-b052-4c2ea4544657",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "84825d32-1387-3159-936e-da816264d8a5",
+            "id" : "06630e7a-5a59-3e50-98f5-7c52389a8864",
+            "name" : "ConvertAvroToJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "flowFileConcurrency" : "UNBOUNDED",
@@ -54,6 +144,22 @@
           "position" : {
             "x" : 488.0,
             "y" : 264.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "92fdd94f-1446-38a2-909c-72660bea6769",
+          "position" : {
+            "x" : 780.3797577634291,
+            "y" : 613.4219862332192
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "7fe3c5ba-d5bb-33a4-85ad-0d19342dd506",
+          "position" : {
+            "x" : 1280.0,
+            "y" : 480.0
           }
         } ],
         "identifier" : "84825d32-1387-3159-936e-da816264d8a5",
@@ -67,6 +173,58 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-avro-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.25.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "84825d32-1387-3159-936e-da816264d8a5",
+          "identifier" : "06630e7a-5a59-3e50-98f5-7c52389a8864",
+          "name" : "ConvertAvroToJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 664.0,
+            "y" : 344.0
+          },
+          "properties" : {
+            "JSON container options" : "array",
+            "Wrap Single Record" : "false",
+            "Avro schema" : "{\n  \"name\": \"recordFormatName\",\n  \"namespace\": \"nifi.examples\",\n  \"type\": \"record\",\n  \"fields\": [\n    { \"name\": \"test\", \"type\": \"int\" },\n  ]\n}"
+          },
+          "propertyDescriptors" : {
+            "JSON container options" : {
+              "displayName" : "JSON container options",
+              "identifiesControllerService" : false,
+              "name" : "JSON container options",
+              "sensitive" : false
+            },
+            "Wrap Single Record" : {
+              "displayName" : "Wrap Single Record",
+              "identifiesControllerService" : false,
+              "name" : "Wrap Single Record",
+              "sensitive" : false
+            },
+            "Avro schema" : {
+              "displayName" : "Avro schema",
+              "identifiesControllerService" : false,
+              "name" : "Avro schema",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.avro.ConvertAvroToJSON",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -92,13 +250,13 @@
             "Max Wait Time" : "0 seconds",
             "Database Connection Pooling Service" : "047e2448-8b05-3bfb-b6fa-3d7c78e164f1",
             "esql-auto-commit" : "true",
-            "dbf-user-logical-types" : "false",
+            "dbf-user-logical-types" : "true",
             "dbf-default-scale" : "0",
             "compression-format" : "NONE",
             "esql-output-batch-size" : "0",
             "esql-fetch-size" : "0",
             "SQL select query" : "select * from test",
-            "dbf-normalize" : "false"
+            "dbf-normalize" : "true"
           },
           "propertyDescriptors" : {
             "esql-max-rows" : {
@@ -188,7 +346,7 @@
           },
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
+          "schedulingPeriod" : "30 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
