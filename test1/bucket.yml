@@ -1,5 +1,5 @@
 flows:
-  21d6fe42-94ca-4897-9374-c61b212fd6ab: {ver: 1, file: test1.snapshot, comments: '',
-    author: anonymous, created: 1718052172952, flowName: test1, flowDesc: ''}
+  21d6fe42-94ca-4897-9374-c61b212fd6ab: {ver: 2, file: test1.snapshot, comments: qweqweqw,
+    author: anonymous, created: 1718052637832, flowName: test1, flowDesc: ''}
 layoutVer: 1
 bucketId: 4164b513-ef37-44a6-bb79-ea029489e605
