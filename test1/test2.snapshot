@@ -239,8 +239,8 @@
           "name" : "AttributesToCSV",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 472.0,
-            "y" : 432.0
+            "x" : 232.0,
+            "y" : 288.0
           },
           "properties" : {
             "null-value" : "false",
